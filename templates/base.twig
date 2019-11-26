@@ -1,1 +1,24 @@
-<h1>Hello {{ name }}!</h1>
+<!DOCTYPE HTML>
+<html>
+    {% block html_head %}
+        {% include 'html-head.twig' %}
+    {% endblock %}
+	<body>
+        {% block navigation %}
+
+        {% endblock %}
+
+        {% block content %}
+
+        {% endblock %}
+
+        {% block footer %}
+
+        {% endblock %}
+
+        <script type="text/javascript" src="./assets/js/vendor/vendor.js"></script>
+        {# <script type="text/javascript" src="./assets/js/vendor/vendor.min.js"></script> #}
+        <script type="text/javascript" src="./assets/js/main.js"></script>
+        {# <script type="text/javascript" src="./assets/js/main.min.js"></script> #}
+	</body>
+</html>
