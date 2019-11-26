@@ -1,0 +1,20 @@
+# Folders
+node_modules/
+maps/
+
+# Files
+*.min.*
+*.min.*
+.DS_Store
+/.DS_Store
+
+# Generic
+*.log
+/license.txt
+/readme.html
+/sitemap.xml
+/sitemap.xml.gz
+.vscode
+
+# Specific
+package-lock.json
