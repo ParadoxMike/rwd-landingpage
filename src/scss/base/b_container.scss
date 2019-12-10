@@ -1,0 +1,30 @@
+.container-base {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.container-full {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-normal {
+    margin: 0 auto;
+    width: 90%;
+
+    @include media-breakpoint-up(sm) {
+        
+    }
+
+    @include media-breakpoint-up(md) {
+        
+    }
+
+    @include media-breakpoint-up(lg) {
+        
+    }
+
+    @include media-breakpoint-up(xl) {
+        
+    }
+}

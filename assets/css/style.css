@@ -8498,4 +8498,19 @@ p {
   margin-bottom: 0;
 }
 
+.container-base {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.container-full {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-normal {
+  margin: 0 auto;
+  width: 90%;
+}
+
 /*# sourceMappingURL=maps/style.css.map */

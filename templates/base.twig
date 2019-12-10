@@ -4,13 +4,18 @@
         {% include 'html-head.twig' %}
     {% endblock %}
 	<body>
-        {% block navigation %}
+        <header>
+            <nav>
+                {% block navigation %}
 
-        {% endblock %}
-
+                {% endblock %}
+            </nav>
+        </header>
+        
         {% block content %}
 
         {% endblock %}
+
 
         {% block footer %}
 
