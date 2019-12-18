@@ -19,9 +19,9 @@ spl_autoload_register(function ($classname) {
 
 $loader = new \Twig\Loader\FilesystemLoader('templates');
 $twig = new \Twig\Environment($loader, [
-    'cache' => 'cache',
+    // 'cache' => 'cache',
 ]);
 
-echo $twig->render('main-page.twig', ['name' => 'Carlos']);
+echo $twig->render('base.twig', ['name' => 'Carlos']);
 
 ?>

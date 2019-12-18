@@ -5,11 +5,15 @@
     {% endblock %}
 	<body>
         {% block header %}
-        
+            <header class="section">
+                {% include "header/h_site.twig" %}
+            </header>
         {% endblock %}
-        
-        {% block content %}
 
+        {% block content %}
+            <section class="section">
+                {% include "modules/m_example-module.twig" %}
+            </section>
         {% endblock %}
 
         {% block footer %}
