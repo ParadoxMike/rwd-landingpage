@@ -8537,4 +8537,10 @@ p {
   width: 90%;
 }
 
+.section {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
 /*# sourceMappingURL=maps/style.css.map */

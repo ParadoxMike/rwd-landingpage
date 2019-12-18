@@ -22,6 +22,6 @@ $twig = new \Twig\Environment($loader, [
     'cache' => 'cache',
 ]);
 
-echo $twig->render('views/main-page.twig', ['name' => 'Carlos']);
+echo $twig->render('main-page.twig', ['name' => 'Carlos']);
 
 ?>

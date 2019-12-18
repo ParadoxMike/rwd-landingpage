@@ -1,0 +1,13 @@
+{% extends "./base.twig" %}
+
+{% block header %}
+    <header class="section">
+        {% include "header/h_site.twig" %}
+    </header>
+{% endblock %}
+
+{% block content %}
+    <section class="section">
+        {% include "modules/m_example-module.twig" %}
+    </section>
+{% endblock %}
