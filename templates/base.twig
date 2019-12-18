@@ -20,6 +20,10 @@
 
         {% endblock %}
 
+        {% block overlays %}
+            {% include "overlays/o_logo.twig" %}
+        {% endblock %}
+
         <script type="text/javascript" src="./assets/js/vendor/vendor.js"></script>
         {# <script type="text/javascript" src="./assets/js/vendor/vendor.min.js"></script> #}
         <script type="text/javascript" src="./assets/js/main.js"></script>

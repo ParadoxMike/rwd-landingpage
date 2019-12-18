@@ -32,6 +32,10 @@ STYLESHEET: STYLE
 
 // Overlays
 @import "overlays/o_lightbox";
+@import "overlays/o_logo";
+
+// Header
+@import "header/h_site";
 
 // Footer
 @import "footer/f_site";

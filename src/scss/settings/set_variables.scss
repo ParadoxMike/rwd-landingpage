@@ -5,29 +5,11 @@
 // grayscale
 $c-black: #000000;
 $c-white: #ffffff;
-$c1-gray: #333333;
-$c2-gray: #666666;
-$c3-gray: #999999;
-$c4-gray: #cccccc;
-$c5-gray: #dddddd;
-$c6-gray: #eeeeee;
 
 // project
-$c1-main: $c1-gray;
-$c2-main: $c2-gray;
-$c3-main: $c3-gray;
+$c1-main: #393c41;
 
-$c1-second: $c4-gray;
-$c2-second: $c5-gray;
-
-$c1-third: $c3-gray;
-$c2-third: $c4-gray;
-
-// specials
-$c1-accent: lighten($c3-main, 5%);
-$c1-hint: $c1-third;
-$c1-error: #d6445c;
-$c1-success: #00b878;
+$c1-second: #287233;
 
 // usage text: .t-c1-main,...
 // usage background: .bg-c1-main,...
@@ -36,23 +18,8 @@ $theme-colors: map-merge(
    (
       "c-black": $c-black,
       "c-white": $c-white,
-      "c1-gray": $c1-gray,
-      "c2-gray": $c2-gray,
-      "c3-gray": $c3-gray,
-      "c4-gray": $c4-gray,
-      "c5-gray": $c5-gray,
-      "c6-gray": $c6-gray,
       "c1-main": $c1-main,
-      "c2-main": $c2-main,
-      "c3-main": $c3-main,
       "c1-second": $c1-second,
-      "c2-second": $c2-second,
-      "c1-third": $c1-third,
-      "c2-third": $c2-third,
-      "c1-accent": $c1-accent,
-      "c1-hint": $c1-hint,
-      "c1-error": $c1-error,
-      "c1-success": $c1-success,
    ),
    $theme-colors
 );
@@ -62,11 +29,9 @@ $theme-colors: map-merge(
    FONTS
 ******************************************************************/
 
-$f1-main: "RobotoBold", sans-serif;
-$f2-main: "RobotoRegular", sans-serif;
-$f1-second: "MerriweatherLight", serif;
-$f2-second: "MerriweatherItalic", serif;
-$f3-second: "MerriweatherBold", serif;
+$f1-main: "RobotoRegular", sans-serif;
+$f2-main: "RobotoMedium", sans-serif;
+$f3-main: "RobotoBold", sans-serif;
 
 /******************************************************************
    BORDER
@@ -96,7 +61,6 @@ $transition-300: 0.3s;
    SHADOWS
 ******************************************************************/
 
-$drop-shadow-card: 0 0 1.8rem rgba($c1-gray, 0.1);
 
 /******************************************************************
    SPACERS

@@ -2,5 +2,21 @@
 
 .btn,
 a.btn {
-
+    // flex: 0 0 auto;
+    font-family: $f1-main;
+    font-size: 16px;
+    border-radius: 21px;
+    background: transparent;
+    padding: 10px 30px;
+    cursor: pointer;
+    
+    &--white {
+        border: solid $bd-width-3 $c-white;
+        color: $c-white;
+        
+        &:hover {
+            background: $c-white;
+            color: $c-black;
+        }
+    }
 }

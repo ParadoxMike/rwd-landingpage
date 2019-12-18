@@ -1,0 +1,29 @@
+.h_site {
+    background-image: url(../img/header_img.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    &__info-box {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0 auto;
+        width: 800px;
+    }
+
+    &__info {
+        text-align: center;
+        width: 33.33%;
+        flex: 0 0 auto;
+        padding: 1.5rem 0;
+
+        &--middle {
+            border-left: solid $c-white $bd-width-1;
+            border-right: solid $c-white $bd-width-1;
+        }
+    }
+}
