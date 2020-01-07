@@ -8555,6 +8555,15 @@ a.btn--black:hover {
   width: 22%;
 }
 
+.m_demo {
+  background-image: url(../img/header_img.jpg);
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
 .o_logo {
   position: fixed;
   top: 1rem;
