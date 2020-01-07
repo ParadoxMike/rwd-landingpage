@@ -1,1 +1,0 @@
-delete this file when the first module SCSS file is created in this folder

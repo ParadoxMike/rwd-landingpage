@@ -406,7 +406,7 @@ template {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("Roboto"), local("Roboto-Regular"), url("assets/fonts/roboto-regular.woff2") format("woff2"), url("assets/fonts/roboto-regular.woff") format("woff"), url("assets/fonts/roboto-regular.ttf") format("truetype");
+  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto-regular.woff2") format("woff2"), url("../fonts/roboto-regular.woff") format("woff"), url("../fonts/roboto-regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -414,7 +414,7 @@ template {
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: local("Roboto"), local("Roboto-Medium"), url("assets/fonts/roboto-medium.woff2") format("woff2"), url("assets/fonts/roboto-medium.woff") format("woff"), url("assets/fonts/roboto-medium.ttf") format("truetype");
+  src: local("Roboto"), local("Roboto-Medium"), url("../fonts/roboto-medium.woff2") format("woff2"), url("../fonts/roboto-medium.woff") format("woff"), url("../fonts/roboto-medium.ttf") format("truetype");
 }
 
 @font-face {
@@ -422,7 +422,7 @@ template {
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local("Roboto"), local("Roboto-Bold"), url("assets/fonts/roboto-bold.woff2") format("woff2"), url("assets/fonts/roboto-bold.woff") format("woff"), url("assets/fonts/roboto-bold.ttf") format("truetype");
+  src: local("Roboto"), local("Roboto-Bold"), url("../fonts/roboto-bold.woff2") format("woff2"), url("../fonts/roboto-bold.woff") format("woff"), url("../fonts/roboto-bold.ttf") format("truetype");
 }
 
 /******************************************************************
@@ -8399,20 +8399,28 @@ h5,
 h6,
 p {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: .5em;
 }
 
 h1,
 .h1 {
   font-family: "RobotoMedium", sans-serif;
   color: #000000;
-  font-size: 3rem;
+  font-size: 3rem !important;
 }
 
 h2,
 .h2 {
   font-family: "RobotoMedium", sans-serif;
   color: #000000;
+  font-size: 1.4rem !important;
+}
+
+h3,
+.h3 {
+  font-family: "RobotoMedium", sans-serif;
+  color: #000000;
+  font-size: 1rem !important;
 }
 
 .btn,
@@ -8456,6 +8464,28 @@ a.btn--white:hover {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+}
+
+.m_image-text-left {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.m_image-text-left__text {
+  display: block;
+  height: 100%;
+  width: 22%;
+}
+
+.m_image-text-left__image {
+  display: block;
+  height: 100%;
+  width: 78%;
+  background-image: url(../img/header_img.jpg);
+  background-position: center center;
+  background-size: cover;
 }
 
 .o_logo {
