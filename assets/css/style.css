@@ -8424,10 +8424,13 @@ h3,
   font-size: 1.2rem !important;
 }
 
+.p1 {
+  font-size: 1rem !important;
+}
+
 p {
   font-family: "RobotoRegular", sans-serif;
   color: #000000;
-  font-size: 1rem;
 }
 
 .btn,
@@ -8450,6 +8453,18 @@ a.btn--white {
 a.btn--white:hover {
   background: #ffffff;
   color: #000000;
+}
+
+.btn--black,
+a.btn--black {
+  border: solid 3px #000000;
+  color: #000000;
+}
+
+.btn--black:hover,
+a.btn--black:hover {
+  background: #000000;
+  color: #ffffff;
 }
 
 .container-base {

@@ -19,4 +19,14 @@ a.btn {
             color: $c-black;
         }
     }
+    
+    &--black {
+        border: solid $bd-width-3 $c-black;
+        color: $c-black;
+        
+        &:hover {
+            background: $c-black;
+            color: $c-white;
+        }
+    }
 }
