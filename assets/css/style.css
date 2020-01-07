@@ -8510,6 +8510,28 @@ a.btn--black:hover {
   background-size: cover;
 }
 
+.m_image-text-right {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.m_image-text-right__image {
+  display: block;
+  height: 100%;
+  width: 78%;
+  background-image: url(../img/header_img.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.m_image-text-right__text {
+  display: block;
+  height: 100%;
+  width: 22%;
+}
+
 .o_logo {
   position: fixed;
   top: 1rem;

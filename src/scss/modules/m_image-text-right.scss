@@ -1,0 +1,21 @@
+.m_image-text-right {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+    &__image{
+        display: block;
+        height: 100%;
+        width: 78%;
+        background-image: url(../img/header_img.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+
+    &__text {
+        display: block;
+        height: 100%;
+        width: 22%;
+    }
+}
