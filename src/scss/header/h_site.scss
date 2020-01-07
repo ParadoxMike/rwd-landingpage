@@ -6,6 +6,13 @@
     width: 100%;
     position: relative;
 
+    &__claim {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
     &__info-box {
         position: absolute;
         bottom: 0;

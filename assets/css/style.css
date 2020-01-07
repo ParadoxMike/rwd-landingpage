@@ -8402,6 +8402,13 @@ p {
   margin-bottom: 0;
 }
 
+h1,
+.h1 {
+  font-family: "RobotoMedium", sans-serif;
+  color: #000000;
+  font-size: 3rem;
+}
+
 h2,
 .h2 {
   font-family: "RobotoMedium", sans-serif;
@@ -8470,6 +8477,13 @@ a.btn--white:hover {
   height: 100%;
   width: 100%;
   position: relative;
+}
+
+.h_site__claim {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .h_site__info-box {
