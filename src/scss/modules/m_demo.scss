@@ -1,9 +1,17 @@
 .m_demo{
-    background-image: url(../img/header_img.jpg);
-    background-position: center center;
-    background-size: cover;
+    // background-image: url(../img/header_img.jpg);
+    // background-position: center center;
+    // background-size: cover;
+    background-color: $c-black;
     position: relative;
     height: 100%;
     width: 100%;
     
+    &__info-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+    }
 }

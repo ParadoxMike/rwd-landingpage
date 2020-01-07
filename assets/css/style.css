@@ -8428,6 +8428,10 @@ h3,
   font-size: 1rem !important;
 }
 
+.p2 {
+  font-size: 1.4rem !important;
+}
+
 p {
   font-family: "RobotoRegular", sans-serif;
   color: #000000;
@@ -8556,12 +8560,18 @@ a.btn--black:hover {
 }
 
 .m_demo {
-  background-image: url(../img/header_img.jpg);
-  background-position: center center;
-  background-size: cover;
+  background-color: #000000;
   position: relative;
   height: 100%;
   width: 100%;
+}
+
+.m_demo__info-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
 }
 
 .o_logo {
