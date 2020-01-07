@@ -11,6 +11,29 @@
         background-image: url(../img/header_img.jpg);
         background-position: center center;
         background-size: cover;
+        position: relative;
+    }
+
+    &__image-info-box {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0 auto;
+        width: 800px;
+        display: flex;
+    }
+
+    &__image-info {
+        text-align: left;
+        width: 33.33%;
+        flex: 0 0 auto;
+        padding: 1.5rem 0;
+
+        &--middle {
+            border-left: solid $c-white $bd-width-2;
+            border-right: solid $c-white $bd-width-2;
+        }
     }
 
     &__text {

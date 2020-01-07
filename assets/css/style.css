@@ -8524,6 +8524,29 @@ a.btn--black:hover {
   background-image: url(../img/header_img.jpg);
   background-position: center center;
   background-size: cover;
+  position: relative;
+}
+
+.m_image-text-right__image-info-box {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  width: 800px;
+  display: flex;
+}
+
+.m_image-text-right__image-info {
+  text-align: left;
+  width: 33.33%;
+  flex: 0 0 auto;
+  padding: 1.5rem 0;
+}
+
+.m_image-text-right__image-info--middle {
+  border-left: solid #ffffff 2px;
+  border-right: solid #ffffff 2px;
 }
 
 .m_image-text-right__text {
