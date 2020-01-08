@@ -14,19 +14,22 @@ a.btn {
         border: solid $bd-width-3 $c-white;
         color: $c-white;
         
-        &:hover {
-            background: $c-white;
-            color: $c-black;
+        @include media-breakpoint-up(md) {
+            &:hover {
+                background: $c-white;
+                color: $c-black;
+            }
         }
     }
     
     &--black {
         border: solid $bd-width-3 $c-black;
         color: $c-black;
-        
-        &:hover {
-            background: $c-black;
-            color: $c-white;
+        @include media-breakpoint-up(md) {
+            &:hover {
+                background: $c-black;
+                color: $c-white;
+            }
         }
     }
 }

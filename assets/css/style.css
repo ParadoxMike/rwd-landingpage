@@ -8414,7 +8414,14 @@ h2,
 .h2 {
   font-family: "RobotoMedium", sans-serif;
   color: #000000;
-  font-size: 1.4rem !important;
+  font-size: 1.2rem !important;
+}
+
+@media (min-width: 961px) {
+  h2,
+  .h2 {
+    font-size: 1.4rem !important;
+  }
 }
 
 h3,
@@ -8425,11 +8432,17 @@ h3,
 }
 
 .p1 {
-  font-size: 1rem !important;
+  font-size: 1.4rem !important;
 }
 
 .p2 {
-  font-size: 1.4rem !important;
+  font-size: 1.3rem !important;
+  line-height: 1.2;
+}
+
+.p3 {
+  font-size: 1.1rem !important;
+  line-height: 1.3;
 }
 
 p {
@@ -8453,10 +8466,12 @@ a.btn--white {
   color: #ffffff;
 }
 
-.btn--white:hover,
-a.btn--white:hover {
-  background: #ffffff;
-  color: #000000;
+@media (min-width: 961px) {
+  .btn--white:hover,
+  a.btn--white:hover {
+    background: #ffffff;
+    color: #000000;
+  }
 }
 
 .btn--black,
@@ -8465,10 +8480,12 @@ a.btn--black {
   color: #000000;
 }
 
-.btn--black:hover,
-a.btn--black:hover {
-  background: #000000;
-  color: #ffffff;
+@media (min-width: 961px) {
+  .btn--black:hover,
+  a.btn--black:hover {
+    background: #000000;
+    color: #ffffff;
+  }
 }
 
 .container-base {
@@ -8488,8 +8505,14 @@ a.btn--black:hover {
 
 .section {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   overflow: hidden;
+}
+
+@media (min-width: 961px) {
+  .section {
+    height: 100vh;
+  }
 }
 
 .m_image-text-left {
@@ -8595,11 +8618,35 @@ a.btn--black:hover {
   position: relative;
 }
 
+@media (max-width: 960.98px) {
+  .h_site {
+    height: 650px;
+  }
+}
+
+@media (max-width: 1360.98px) {
+  .h_site {
+    height: 750px;
+  }
+}
+
 .h_site__claim {
   position: absolute;
-  top: 30%;
+  top: 15%;
   left: 50%;
   transform: translateX(-50%);
+}
+
+@media (min-width: 961px) {
+  .h_site__claim {
+    top: 20%;
+  }
+}
+
+@media (min-width: 961px) {
+  .h_site__claim {
+    top: 30%;
+  }
 }
 
 .h_site__info-box {
@@ -8608,14 +8655,32 @@ a.btn--black:hover {
   left: 50%;
   transform: translateX(-50%);
   margin: 0 auto;
-  width: 800px;
+  width: 90%;
+}
+
+@media (min-width: 481px) {
+  .h_site__info-box {
+    width: 80%;
+  }
+}
+
+@media (min-width: 961px) {
+  .h_site__info-box {
+    width: 800px;
+  }
 }
 
 .h_site__info {
   text-align: center;
-  width: 33.33%;
   flex: 0 0 auto;
   padding: 1.5rem 0;
+  flex: 1 1 auto;
+}
+
+@media (min-width: 481px) {
+  .h_site__info {
+    width: 33.33%;
+  }
 }
 
 .h_site__info--middle {

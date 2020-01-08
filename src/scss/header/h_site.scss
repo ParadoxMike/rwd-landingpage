@@ -6,11 +6,27 @@
     width: 100%;
     position: relative;
 
+    @include media-breakpoint-down(sm) {
+        height: 650px;
+    }
+
+    @include media-breakpoint-down(md) {
+        height: 750px;
+    }
+
     &__claim {
         position: absolute;
-        top: 30%;
+        top: 15%;
         left: 50%;
         transform: translateX(-50%);
+
+        @include media-breakpoint-up(md) {
+            top: 20%;
+        }
+
+        @include media-breakpoint-up(md) {
+            top: 30%;
+        }
     }
 
     &__info-box {
@@ -19,15 +35,27 @@
         left: 50%;
         transform: translateX(-50%);
         margin: 0 auto;
-        width: 800px;
+        width: 90%;
+
+        @include media-breakpoint-up(sm) {
+            width: 80%;
+        }
+
+        @include media-breakpoint-up(md) {
+            width: 800px;
+        }
     }
 
     &__info {
         text-align: center;
-        width: 33.33%;
         flex: 0 0 auto;
         padding: 1.5rem 0;
+        flex: 1 1 auto;
 
+        @include media-breakpoint-up(sm) {
+            width: 33.33%;
+        }
+        
         &--middle {
             border-left: solid $c-white $bd-width-2;
             border-right: solid $c-white $bd-width-2;
