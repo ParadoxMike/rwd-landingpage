@@ -1,0 +1,23 @@
+.m_pacenote-driver {
+    background-color: $c-black;
+    height: auto;
+    width: 100%;
+    position: relative;
+    
+    @include media-breakpoint-up(md) {
+        height: 100%;
+    }
+    
+    &__info-container {
+        margin: 0 auto;
+        width: 100%;
+
+        @include media-breakpoint-up(md) {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60%;
+        }
+    }
+}
