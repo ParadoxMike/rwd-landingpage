@@ -8676,15 +8676,9 @@ a.btn--black {
 
 .m_demo {
   background-color: #000000;
-  height: 650px;
+  height: auto;
   width: 100%;
   position: relative;
-}
-
-@media (min-width: 481px) {
-  .m_demo {
-    height: 750px;
-  }
 }
 
 @media (min-width: 961px) {
@@ -8694,11 +8688,18 @@ a.btn--black {
 }
 
 .m_demo__info-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 60%;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (min-width: 961px) {
+  .m_demo__info-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+  }
 }
 
 .o_logo {
