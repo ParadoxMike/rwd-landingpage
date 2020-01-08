@@ -14,8 +14,12 @@
         
         @include media-breakpoint-up(md) {
             order: 1;
-            width: 22%;
+            width: 36%;
             height: 100%;
+        }
+        
+        @include media-breakpoint-up(lg) {
+            width: 22%;
         }
     }
     
@@ -35,8 +39,12 @@
         
         @include media-breakpoint-up(md) {
             height: 100%;
-            width: 78%;
+            width: 64%;
             order: 2;
+        }
+        
+        @include media-breakpoint-up(lg) {
+            width: 78%;
         }
     }
 }
