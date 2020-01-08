@@ -8519,22 +8519,49 @@ a.btn--black {
   height: 100%;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
 }
 
 .m_image-text-left__text {
   display: block;
-  height: 100%;
-  width: 22%;
+  height: auto;
+  width: 100%;
+  order: 2;
+  flex-shrink: 0;
+}
+
+@media (min-width: 961px) {
+  .m_image-text-left__text {
+    order: 1;
+    width: 22%;
+    height: 100%;
+  }
 }
 
 .m_image-text-left__image {
   display: block;
-  height: 100%;
-  width: 78%;
+  height: 450px;
+  width: 100%;
   background-image: url(../img/header_img.jpg);
   background-position: center center;
   background-size: cover;
+  order: 1;
+  flex-shrink: 0;
+}
+
+@media (min-width: 481px) {
+  .m_image-text-left__image {
+    height: 550px;
+  }
+}
+
+@media (min-width: 961px) {
+  .m_image-text-left__image {
+    height: 100%;
+    width: 78%;
+    order: 2;
+  }
 }
 
 .m_image-text-right {
