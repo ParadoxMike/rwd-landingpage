@@ -5,31 +5,31 @@
     {% endblock %}
 	<body>
         {% block header %}
-            <header class="section">
+            <header class="section" data-section-name="top">
                 {% include "header/h_site.twig" %}
             </header>
         {% endblock %}
 
         {% block content %}
-            <section class="section">
+            <section class="section" data-section-name="loslegen">
                 {% include 'reused_modules_content/loslegen.twig' %}
             </section>
-            <section class="section">
+            <section class="section" data-section-name="saferoad">
                 {% include 'reused_modules_content/saferoad.twig' %}
             </section>
-            <section class="section">
+            <section class="section" data-section-name="loadbalancing">
                 {% include 'reused_modules_content/smart-load-balancing.twig' %}
             </section>
-            <section class="section">
+            <section class="section" data-section-name="demo">
                 {% include 'modules/m_demo.twig' %}
             </section>
-            <section class="section">
+            <section class="section" data-section-name="driver">
                 {% include 'modules/m_pacenote-driver.twig' %}
             </section>
         {% endblock %}
 
         {% block footer %}
-            <footer class="section">
+            <footer class="section" data-section-name="footer">
                 {% include 'footer/f_site.twig' %}
             </footer>
         {% endblock %}
