@@ -7,6 +7,12 @@
     @include media-breakpoint-up(md) {
         height: 100%;
     }
+
+    &__phone {
+        flex: 0 0 auto;
+        width: 300px;
+        height: 580px;
+    }
     
     &__info-container {
         margin: 0 auto;
@@ -17,11 +23,45 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 60%;
+            width: 80%;
+        }
+
+        @include media-breakpoint-up(lg) {
+            width: 70%;
         }
     }
 
+    &__heddings {
+
+    }
+
     &__bullet-point {
-        
+        min-height: 6rem;
+
+        &-img {
+            width: auto;
+            height: 4rem;
+        }
+
+        &-text {
+            position: relative;
+
+            &::before {
+                content: '';
+                display: block;
+                background-color: $c-gray;
+                height: 2px;
+                width: 30px;
+                margin-bottom: 0.5rem;
+            }
+
+            & > h4 {
+                margin-bottom: 0rem;
+            }
+
+            & > p {
+                margin-bottom: 0.8rem;
+            }
+        }
     }
 }

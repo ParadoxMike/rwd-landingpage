@@ -455,6 +455,10 @@ template {
   color: #ffffff !important;
 }
 
+.t-c-gray {
+  color: #545454 !important;
+}
+
 .t-c1-main {
   color: #393c41 !important;
 }
@@ -469,6 +473,10 @@ template {
 
 .bg-c-white {
   background: #ffffff !important;
+}
+
+.bg-c-gray {
+  background: #545454 !important;
 }
 
 .bg-c1-main {
@@ -8431,6 +8439,14 @@ h3,
   font-size: 1.2rem !important;
 }
 
+h4,
+.h4 {
+  font-family: "RobotoMedium", sans-serif;
+  color: #000000;
+  font-size: 1.1rem !important;
+  line-height: 1.3;
+}
+
 .p1 {
   font-size: 1.4rem !important;
 }
@@ -8715,6 +8731,12 @@ a.btn--black {
   }
 }
 
+.m_pacenote-driver__phone {
+  flex: 0 0 auto;
+  width: 300px;
+  height: 580px;
+}
+
 .m_pacenote-driver__info-container {
   margin: 0 auto;
   width: 100%;
@@ -8726,8 +8748,44 @@ a.btn--black {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60%;
+    width: 80%;
   }
+}
+
+@media (min-width: 1361px) {
+  .m_pacenote-driver__info-container {
+    width: 70%;
+  }
+}
+
+.m_pacenote-driver__bullet-point {
+  min-height: 6rem;
+}
+
+.m_pacenote-driver__bullet-point-img {
+  width: auto;
+  height: 4rem;
+}
+
+.m_pacenote-driver__bullet-point-text {
+  position: relative;
+}
+
+.m_pacenote-driver__bullet-point-text::before {
+  content: '';
+  display: block;
+  background-color: #545454;
+  height: 2px;
+  width: 30px;
+  margin-bottom: 0.5rem;
+}
+
+.m_pacenote-driver__bullet-point-text > h4 {
+  margin-bottom: 0rem;
+}
+
+.m_pacenote-driver__bullet-point-text > p {
+  margin-bottom: 0.8rem;
 }
 
 .o_logo {
