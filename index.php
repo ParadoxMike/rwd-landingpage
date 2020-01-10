@@ -1,6 +1,7 @@
 <?php
 
-#ini_set('display_errors',1); # uncomment if you need debugging
+# uncomment if you need debugging
+// ini_set('display_errors',1); 
 
 spl_autoload_register(function ($classname) {
     $dirs = array (

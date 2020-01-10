@@ -1,4 +1,12 @@
-{% extends "modules/m_image-text-left.twig" %}
+{% extends "modules/m_image-text-right.twig" %}
+
+{% block image %}
+    background-image: url(./assets/img/header_img.jpg);
+{% endblock %}
+
+{% block image_info_text %}
+   
+{% endblock %}
 
 {% block heading %}
     Loslegen
@@ -14,8 +22,4 @@
 
 {% block button_text %}
     pacenote testen
-{% endblock %}
-
-{% block image %}
-    background-image: url(./assets/img/header_img.jpg);
 {% endblock %}
