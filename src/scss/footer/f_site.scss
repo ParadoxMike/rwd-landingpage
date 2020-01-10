@@ -1,3 +1,58 @@
 .f_site {
+    background-color: $c-black;
+    // height: 650px;
+    height: auto;
+    width: 100%;
+    position: relative;
+    
+    @include media-breakpoint-up(sm) {
+        // height: 750px;
+    }
+    
+    @include media-breakpoint-up(md) {
+        height: 100%;
+    }
+    
+    &__links-container {
+        margin: 0 auto;
+        width: 100%;
 
+        @include media-breakpoint-up(md) {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60%;
+        }
+    }
+
+    &__img-link {
+        margin-bottom: 1.5rem;
+        transition: ease-in-out $transition-150;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:hover {
+
+            @include media-breakpoint-up(md) {
+                transform: scale(1.05);
+            }
+        }
+
+        & > img {
+            height: 4rem;
+            width: 4rem;
+        }
+    }
+
+    &__text-link{
+        margin-bottom: 4rem;
+        flex: 0 0 auto;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }

@@ -1,0 +1,40 @@
+.link {
+    text-decoration: none;
+
+    &--white {
+        color: $c-white;
+        position: relative;
+
+        &::after{
+            content: '';
+            height: .1em;
+            width: 0;
+            background-color: $c-white;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: width $transition-150 ease-in-out;
+        }
+        
+        &:link {
+            color: $c-white;
+        }
+        
+        &:visited {
+            color: $c-white;
+        }
+        
+        &:hover {
+            @include media-breakpoint-up(md) {
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+        
+        &active {
+            color: $c-white;
+        }
+    }
+}
