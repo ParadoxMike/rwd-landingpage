@@ -9,6 +9,10 @@ a.btn {
     background: transparent;
     padding: 10px 30px;
     cursor: pointer;
+
+    @include media-breakpoint-down(sm) {
+        width: 100%
+    }
     
     &--white {
         border: solid $bd-width-3 $c-white;

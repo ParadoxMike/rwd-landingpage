@@ -8476,6 +8476,13 @@ a.btn {
   cursor: pointer;
 }
 
+@media (max-width: 960.98px) {
+  .btn,
+  a.btn {
+    width: 100%;
+  }
+}
+
 .btn--white,
 a.btn--white {
   border: solid 3px #ffffff;
