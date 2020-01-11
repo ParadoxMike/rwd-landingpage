@@ -35,7 +35,12 @@ const nSite = (function($) {
     ******************************************************************/
    function buildNav() {
         $.each( $sections, function(index, section){
-            $nSite.append('<div class="n_site__nav-item" data-section-name="' + $(section).data("section-name") + '"><p class="n_site__nav-text">' + $(section).data("nav-name") + '</p></div>');
+            if(index == 0) {
+                $nSite.append('<div class="n_site__nav-item n_site__nav-item--active" data-section-name="' + $(section).data("section-name") + '"><p class="n_site__nav-text">' + $(section).data("nav-name") + '</p></div>');
+            }
+            else {
+                $nSite.append('<div class="n_site__nav-item" data-section-name="' + $(section).data("section-name") + '"><p class="n_site__nav-text">' + $(section).data("nav-name") + '</p></div>');
+            }
         });
         $navItems = $('.n_site__nav-item');
     }
