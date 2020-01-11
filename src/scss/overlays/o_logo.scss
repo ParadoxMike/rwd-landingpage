@@ -1,11 +1,15 @@
 .o_logo {
-    position: fixed;
+    position: absolute;
     top: 1rem;
     left: 1.5rem;
     height: 1.8rem;
-
+    
     &__img {
         height: 100%;
         width: auto;
+    }
+    
+    @include media-breakpoint-up(md) {
+        position: fixed;
     }
 }

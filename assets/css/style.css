@@ -8911,7 +8911,7 @@ a.btn--black {
 }
 
 .o_logo {
-  position: fixed;
+  position: absolute;
   top: 1rem;
   left: 1.5rem;
   height: 1.8rem;
@@ -8920,6 +8920,12 @@ a.btn--black {
 .o_logo__img {
   height: 100%;
   width: auto;
+}
+
+@media (min-width: 961px) {
+  .o_logo {
+    position: fixed;
+  }
 }
 
 .h_site {
