@@ -8835,6 +8835,81 @@ a.btn--black {
   margin-bottom: 0.8rem;
 }
 
+.n_site {
+  position: fixed;
+  top: 50%;
+  left: 0.5rem;
+  transform: translateY(-50%);
+  display: none;
+}
+
+@media (min-width: 961px) {
+  .n_site {
+    display: block;
+  }
+}
+
+.n_site__nav-item {
+  position: relative;
+  min-width: 70px;
+  margin-bottom: .2rem;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.n_site__nav-item:last-child {
+  margin-bottom: 0;
+}
+
+.n_site__nav-item::before {
+  content: '';
+  background-color: #ffffff;
+  width: 1px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.n_site__nav-item:hover {
+  cursor: pointer;
+}
+
+.n_site__nav-item:hover > .n_site__nav-text {
+  display: block;
+}
+
+.n_site__nav-item--active::before {
+  width: 2px;
+}
+
+.n_site__nav-text {
+  line-height: 1;
+  margin-left: 0.5rem;
+  margin-bottom: 0;
+  font-size: 0.8rem;
+  display: none;
+  color: #ffffff;
+}
+
+.n_site--black .n_site__nav-item .n_site__nav-text {
+  color: #000000;
+}
+
+.n_site--black .n_site__nav-item::before {
+  background-color: #000000;
+}
+
+.n_site--white .n_site__nav-item .n_site__nav-text {
+  color: #ffffff;
+}
+
+.n_site--white .n_site__nav-item::before {
+  background-color: #ffffff;
+}
+
 .o_logo {
   position: fixed;
   top: 1rem;

@@ -5,37 +5,38 @@
     {% endblock %}
 	<body>
         {% block header %}
-            <header class="section" data-section-name="top">
+            <header class="section" data-section-name="top" data-nav-name="PACENOTE">
                 {% include "header/h_site.twig" %}
             </header>
         {% endblock %}
 
         {% block content %}
-            <section class="section" data-section-name="loslegen">
+            <section class="section" data-section-name="loslegen" data-nav-name="LOSLEGEN">
                 {% include 'reused_modules_content/loslegen.twig' %}
             </section>
-            <section class="section" data-section-name="saferoad">
+            <section class="section" data-section-name="saferoad" data-nav-name="SAFEROAD">
                 {% include 'reused_modules_content/saferoad.twig' %}
             </section>
-            <section class="section" data-section-name="loadbalancing">
+            <section class="section" data-section-name="loadbalancing" data-nav-name="SMART LOAD BALANCING">
                 {% include 'reused_modules_content/smart-load-balancing.twig' %}
             </section>
-            <section class="section" data-section-name="demo">
+            <section class="section" data-section-name="demo" data-nav-name="DEMO">
                 {% include 'modules/m_demo.twig' %}
             </section>
-            <section class="section" data-section-name="driver">
+            <section class="section" data-section-name="driver" data-nav-name="PACENOTE DRIVER">
                 {% include 'modules/m_pacenote-driver.twig' %}
             </section>
         {% endblock %}
 
         {% block footer %}
-            <footer class="section" data-section-name="footer">
+            <footer class="section" data-section-name="footer" data-nav-name="LINKS">
                 {% include 'footer/f_site.twig' %}
             </footer>
         {% endblock %}
 
         {% block overlays %}
             {% include "overlays/o_logo.twig" %}
+            {% include "navigation/n_site.twig" %}
         {% endblock %}
 
         <script type="text/javascript" src="./assets/js/vendor/vendor.js"></script>
