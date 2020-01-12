@@ -8,6 +8,10 @@ var nSite = function ($) {
       before: function before(index) {
         changeActiveState(index);
         changeColor(index);
+      },
+      touchScroll: false,
+      afterRender: function afterRender() {
+        toggleScrollify();
       }
     });
   });
@@ -26,6 +30,9 @@ var nSite = function ($) {
   buildNav();
   $navItems.click(function () {
     handleNavClick($(this));
+  });
+  $(window).resize(function () {
+    toggleScrollify();
   });
   /******************************************************************
    FUNCTIONS
@@ -61,7 +68,14 @@ var nSite = function ($) {
 
   function handleNavClick($clickedNav) {
     $.scrollify.move("#" + $clickedNav.data("section-name"));
-    console.log($clickedNav.data("section-name"));
+  }
+
+  function toggleScrollify() {
+    if ($(window).width() >= 961) {
+      $.scrollify.enable();
+    } else {
+      $.scrollify.disable();
+    }
   }
   /******************************************************************
       PUBLIC_FUNCTIONS

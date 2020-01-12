@@ -8,6 +8,10 @@ const nSite = (function($) {
                 changeActiveState(index);
                 changeColor(index);
             },
+            touchScroll: false,
+            afterRender:function() {
+                toggleScrollify();
+            },
         });
     });
 
@@ -28,6 +32,10 @@ const nSite = (function($) {
 
     $navItems.click(function() {
         handleNavClick($(this));
+    });
+
+    $(window).resize(function () {
+        toggleScrollify();
     });
 
    /******************************************************************
@@ -65,8 +73,15 @@ const nSite = (function($) {
 
     function handleNavClick($clickedNav) {
         $.scrollify.move("#" + $clickedNav.data("section-name"));
-        console.log($clickedNav.data("section-name"));
-        
+    }
+
+    function toggleScrollify() {
+        if ($(window).width() >= 961) {
+            $.scrollify.enable();
+        }
+        else {
+            $.scrollify.disable();
+        }
     }
 
     /******************************************************************
