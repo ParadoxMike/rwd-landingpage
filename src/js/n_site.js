@@ -59,7 +59,7 @@ const nSite = (function($) {
     }
 
     function changeColor(index) {
-        if(index <= 1 || index >= 3) {
+        if(index <= 1 || index == 3 || index >=5) {
             $nSite.removeClass("n_site--black");
             $nSite.addClass("n_site--white");
             $logo.attr("src", "./assets/img/logo/logo_white.svg");

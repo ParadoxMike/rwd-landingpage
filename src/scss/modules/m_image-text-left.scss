@@ -11,6 +11,7 @@
         width: 100%;
         order: 2;
         flex-shrink: 0;
+        overflow: scroll;
         
         @include media-breakpoint-up(md) {
             order: 1;
