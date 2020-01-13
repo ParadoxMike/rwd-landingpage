@@ -5,6 +5,11 @@
     
     @include media-breakpoint-up(md) {
         height: 100vh;
-        min-height: 910px;
+    }
+    
+    &--min-height {
+        @include media-breakpoint-up(md) {
+            min-height: 910px;
+        }
     }
 }

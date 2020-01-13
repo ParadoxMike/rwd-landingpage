@@ -1,0 +1,25 @@
+.o_back-to-top-btn {
+    display: block;
+    position: fixed;
+    top: 1rem;
+    right: 1.5rem;
+    transform: rotate(45deg);
+    width: 1rem;
+    height: 1rem;
+    border-left: solid $c-white $bd-width-2;
+    border-top: solid $c-white $bd-width-2;
+    transition: ease-in-out 0.3s;
+
+    &:hover {
+        cursor: pointer;
+        transform: translateY(-5px) rotate(45deg);
+    }
+
+    &--white {
+        border-color: $c-white;
+    }
+
+    &--black {
+        border-color: $c-black;
+    }
+}

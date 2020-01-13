@@ -61,4 +61,41 @@
             border-right: solid $c-white $bd-width-1;
         }
     }
+
+    @keyframes bounce {
+        0% {
+            transform: translate(-50%, 0px) rotate(45deg);
+        }
+        50% {
+            transform: translate(-50%, 8px) rotate(45deg);
+        }
+        100% {
+            transform: translate(-50%, 0px) rotate(45deg);
+        }
+    }
+
+    &__scroll-down-btn {
+        display: block;
+        position: absolute;
+        bottom: 1.5rem;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+        width: 1rem;
+        height: 1rem;
+        border-right: solid $c-white $bd-width-2;
+        border-bottom: solid $c-white $bd-width-2;
+        animation: 
+            bounce
+            1.5s
+            ease-in-out
+            0s
+            normal
+            infinite
+            none
+            running;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }

@@ -5,11 +5,13 @@ var nSite = function ($) {
     $.scrollify({
       section: ".section",
       setHeights: false,
+      scrollSpeed: 600,
       before: function before(index) {
         changeActiveState(index);
         changeColor(index);
+        displayHideBackToTopBtn(index);
       },
-      touchScroll: false,
+      touchScroll: true,
       afterRender: function afterRender() {
         toggleScrollify();
       }
@@ -22,6 +24,8 @@ var nSite = function ($) {
   var $nSite = $('.n_site');
   var $sections = $('.section');
   var $logo = $('.o_logo__img');
+  var $scrollDownBtn = $('.h_site__scroll-down-btn');
+  var $backToTopBtn = $('.o_back-to-top-btn');
   var $navItems;
   /******************************************************************
       EVENTS
@@ -33,6 +37,12 @@ var nSite = function ($) {
   });
   $(window).resize(function () {
     toggleScrollify();
+  });
+  $scrollDownBtn.click(function () {
+    $.scrollify.next();
+  });
+  $backToTopBtn.click(function () {
+    $.scrollify.move(0);
   });
   /******************************************************************
    FUNCTIONS
@@ -63,6 +73,22 @@ var nSite = function ($) {
       $nSite.removeClass("n_site--white");
       $nSite.addClass("n_site--black");
       $logo.attr("src", "./assets/img/logo/logo_black.svg");
+    }
+
+    if (index == 1 || index == 3 || index == 4) {
+      $backToTopBtn.removeClass("o_back-to-top-btn--white");
+      $backToTopBtn.addClass("o_back-to-top-btn--black");
+    } else {
+      $backToTopBtn.removeClass("o_back-to-top-btn--black");
+      $backToTopBtn.addClass("o_back-to-top-btn--white");
+    }
+  }
+
+  function displayHideBackToTopBtn(index) {
+    if (index == 0) {
+      $backToTopBtn.addClass("d-none");
+    } else {
+      $backToTopBtn.removeClass("d-none");
     }
   }
 
