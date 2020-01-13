@@ -24,6 +24,10 @@
         }
         
         @include media-breakpoint-up(lg) {
+            width: 75%;
+        }
+        
+        @include media-breakpoint-up(xl) {
             width: 78%;
         }
     }
@@ -42,7 +46,7 @@
         }
 
         @include media-breakpoint-up(lg) {
-            width: 800px;
+            width: 600px;
         }
     }
 
@@ -75,6 +79,10 @@
         }
         
         @include media-breakpoint-up(lg) {
+            width: 25%;
+        }
+        
+        @include media-breakpoint-up(xl) {
             width: 22%;
         }
     }
